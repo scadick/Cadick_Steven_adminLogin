@@ -9,9 +9,11 @@
 <head>
 <meta charset="UTF-8">
 <title>CMS Portal Login</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
 	<h1>Welcome Company Name to your admin page</h1>
+	<div id="time">
 	<?php
 		// Set Default timezone to Toronto's time zone
 		date_default_timezone_set('America/Toronto');
@@ -26,7 +28,10 @@
 		} else if ( $Hour >= 19 || $Hour <= 4 ) { //between 7pm and 4am good evening
 				echo "Good Evening";
 		}
-		echo "<h2>Last login was on {$_SESSION['user_date']}</h2>";
+
+		//echo out when the last login date is on
+		 //<h2>Last login was on {$_SESSION['user_date']}</h2>; //couldn't seem to get this to Worker
 		?>
+	</div>
 </body>
 </html>

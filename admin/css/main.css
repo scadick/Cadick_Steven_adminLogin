@@ -1,0 +1,27 @@
+h1 {
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+form {
+  margin: auto;
+  margin-top: 15px;
+}
+
+.inputs {
+  margin: auto;
+  margin-top: 15px;
+}
+
+body {
+  background: #999;
+}
+
+submit {
+  cursor: pointer;
+}
+
+#time {
+  martin-top: 15px;
+}
