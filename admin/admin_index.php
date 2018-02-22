@@ -1,6 +1,4 @@
 <?php
-	//ini_set('display_errors', 1);
-	//error_reporting(E_ALL);
 	require_once('phpscripts/config.php');
 	confirm_logged_in();
 ?>
@@ -8,30 +6,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>CMS Portal Login</title>
+<title>Welcome to your admin panel</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-	<h1>Welcome Company Name to your admin page</h1>
-	<div id="time">
-	<?php
-		// Set Default timezone to Toronto's time zone
-		date_default_timezone_set('America/Toronto');
-
-		// 24-hour format of an hour without leading zeros (0 through 23)
-		$Hour = date('G');
-
-		if ( $Hour >= 5 && $Hour <= 11 ) { //between 5am and 11am good morning
-				echo "Good Morning";
-		} else if ( $Hour >= 12 && $Hour <= 18 ) { //between 12pm and 6pm good afternoon
-				echo "Good Afternoon";
-		} else if ( $Hour >= 19 || $Hour <= 4 ) { //between 7pm and 4am good evening
-				echo "Good Evening";
-		}
-
-		//echo out when the last login date is on
-		 //<h2>Last login was on {$_SESSION['user_date']}</h2>; //couldn't seem to get this to Worker
-		?>
+	<h1 align="center">Welcome Company Name to your admin page</h1><br>
+	<div align="center">
+	<h3>Hello <?php echo $_SESSION['user_name'];  ?></h3>
+	</div><br>
+	<h4 align="center">Would you like to do any of the following: </h4>
+	<div align="center">
+	<a href="admin_createuser.php">Create User</a><br>
+	</div>
+	<div align="center">
+	<a href="phpscripts/caller.php?caller_id=logout">Sign Out</a>
 	</div>
 </body>
 </html>

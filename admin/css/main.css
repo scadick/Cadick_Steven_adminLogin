@@ -1,27 +1,12 @@
-h1 {
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+.hide {
+  display: none;
 }
 
-form {
+.field {
   margin: auto;
-  margin-top: 15px;
+  font-size: 1em;
 }
 
-.inputs {
-  margin: auto;
-  margin-top: 15px;
-}
-
-body {
-  background: #999;
-}
-
-submit {
-  cursor: pointer;
-}
-
-#time {
-  martin-top: 15px;
+label {
+  font-size: 1em;
 }
