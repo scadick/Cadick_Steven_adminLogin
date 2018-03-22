@@ -1,7 +1,32 @@
+body {
+  background: linear-gradient(#6699ff, #99ccff, #6699ff);
+}
+
+.field {
+  margin: auto;
+  font-size: 1em;
+}
+
+form label {
+  display: block;
+  font-size: 1em;
+  width: 200px;
+}
+
+form input {
+  border-radius: 10px;
+  text-align: center;
+}
+
 h1 {
   margin: 0 auto;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+a {
+  font-size: 1.25em;
+  color: #993333;
 }
 
 form {
@@ -14,14 +39,6 @@ form {
   margin-top: 15px;
 }
 
-body {
-  background: #999;
-}
-
 submit {
   cursor: pointer;
-}
-
-#time {
-  martin-top: 15px;
 }
